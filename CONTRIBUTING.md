@@ -9,7 +9,7 @@
 ## How to build docker image
 
 ```
-docker build -t flask-smorest-api .
+docker build -t rest-api-flask-exercise .
 ```
 
 ## How to run the Dockerfile locally

@@ -36,6 +36,9 @@ def create_app(db_url=None):
 
     api = Api(app)
 
+    database_url = app.config["SQLALCHEMY_DATABASE_URI"]
+    print( f"DATABASE_URL = {database_url}")
+
     app.config["JWT_SECRET_KEY"] = "GP2Engine"
     # run in termninal secrets.SystemRandom().getrandbits(128) to generate a static secret key
     #app.config["JWT_SECRET_KEY"] = "101820254663168119908757373887745116159"
